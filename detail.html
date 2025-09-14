@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Detail Penawaran - GigitAja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+</head>
+<body>
+    <div class="mobile-container">
+        <header class="detail-header">
+            <a href="index.html" class="back-button"><i class="fa-solid fa-arrow-left"></i></a>
+            <h2>Detail Penawaran</h2>
+            <div class="header-placeholder"></div>
+        </header>
+
+        <main class="detail-content">
+            <div class="detail-image-container">
+                <img id="detail-img" src="https://placehold.co/600x400/e0e0e0/333?text=Memuat..." alt="Gambar Makanan">
+            </div>
+
+            <section class="detail-info">
+                <div class="detail-store-header">
+                    <h1 id="detail-store-name">Memuat...</h1>
+                    <div class="rating"><i class="fa-solid fa-star"></i> <span id="detail-rating">...</span></div>
+                </div>
+                <p class="detail-item-name" id="detail-item-name">Memuat...</p>
+                <p class="detail-description">
+                    Selamatkan satu kotak penuh berisi aneka pilihan lezat yang tidak terjual hari ini. Isinya selalu menjadi kejutan yang menyenangkan!
+                </p>
+            </section>
+            
+            <hr class="divider">
+
+            <section class="pickup-info">
+                <h3>Lokasi Pengambilan</h3>
+                <p class="address" id="detail-address">Memuat alamat...</p>
+                <div class="map-placeholder">
+                    <iframe id="map-frame" class="map-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="about:blank"></iframe>
+                </div>
+                <p class="pickup-time"><i class="fa-solid fa-clock"></i> Ambil antara 20:00 - 21:00</p>
+            </section>
+            
+            <hr class="divider">
+            
+            <section class="payment-summary">
+                 <h3>Rincian Pembayaran</h3>
+                 <div class="summary-row">
+                     <span>Harga Asli</span>
+                     <span id="summary-original-price">Rp 0</span>
+                 </div>
+                 <div class="summary-row">
+                     <span>Diskon GigitAja</span>
+                     <span class="discount-amount" id="summary-discount">- Rp 0</span>
+                 </div>
+                 <div class="summary-row total">
+                     <span>Total Bayar</span>
+                     <span id="summary-total-price">Rp 0</span>
+                 </div>
+            </section>
+
+        </main>
+
+        <footer class="payment-footer">
+            <div class="price-info">
+                <p>Total Bayar</p>
+                <h3 id="footer-price">Rp 0</h3>
+            </div>
+            <button id="buy-now-button" class="buy-button">
+                <i class="fa-solid fa-shield-halved"></i> Bayar Sekarang
+            </button>
+        </footer>
+    </div>
+
+    <div id="payment-success-overlay" class="payment-overlay">
+        <div class="payment-success-content">
+            <div class="success-animation">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+            </div>
+            <h2>Pembayaran Berhasil!</h2>
+            <p>Pesananmu sedang disiapkan. Kamu akan diarahkan ke halaman pesanan.</p>
+        </div>
+    </div>
+
+    <script src="assets/js/detail.js"></script>
+</body>
+</html>
+

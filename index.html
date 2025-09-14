@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>GigitAja - Selamatkan Makanan!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+</head>
+<body>
+    
+    <div class="mobile-container">
+        <header class="main-header">
+            <div class="header-greeting">
+                <h1>Malam, Pahlawan Pangan!</h1>
+                <p><i class="fa-solid fa-location-dot"></i> Lagi di Jakarta Barat</p>
+            </div>
+            <div class="header-actions">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Mau selamatkan makanan apa hari ini?">
+            </div>
+
+            <section class="hero-section">
+                <div class="slideshow-container">
+                    <div class="slideshow-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="slide">
+                            <div class="hero-text">
+                                <h2>Cashback QRIS 30%</h2>
+                                <p>Bayar lebih hemat & cepat!</p>
+                                <button>Info Lanjut <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <div class="hero-image"><span>💰</span></div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                             <div class="hero-text">
+                                <h2>Pengguna Baru?</h2>
+                                <p>Diskon 50% di pesanan pertamamu!</p>
+                                <button>Klaim Vouchermu <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <div class="hero-image"><span>🎉</span></div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="slide">
+                             <div class="hero-text">
+                                <h2>Ajak Temanmu!</h2>
+                                <p>Dapatkan poin & reward menarik.</p>
+                                <button>Bagikan Kode <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <div class="hero-image"><span>🎁</span></div>
+                        </div>
+                    </div>
+                    <div class="pagination-dots"></div>
+                </div>
+            </section>
+            
+            <div class="filter-chips">
+                <button class="chip active" data-filter="semua"><i class="fa-solid fa-fire"></i> Semua</button>
+                <button class="chip" data-filter="terdekat"><i class="fa-solid fa-location-arrow"></i> Terdekat</button>
+                <button class="chip" data-filter="vegan"><i class="fa-solid fa-seedling"></i> Vegan</button>
+                <button class="chip" data-filter="kue"><i class="fa-solid fa-cake-candles"></i> Kue</button>
+                <button class="chip" data-filter="kopi"><i class="fa-solid fa-mug-saucer"></i> Kopi</button>
+            </div>
+
+            <section class="offer-section">
+                <h2>Lagi Hits di Dekatmu</h2>
+                <div class="offer-list">
+                    <article class="offer-card" data-category="kue" data-store="Dunkin'" data-item="Magic Box - Roti & Donat" data-price="35000" data-original-price="105000" data-rating="4.9" data-img="https://placehold.co/600x400/fd79a8/FFFFFF?text=Donuts">
+                        <div class="card-image">
+                            <img src="assets/images/dunkin-donuts.jpg" alt="Donat">
+                            <div class="store-info-overlay">
+                                <h3>Dunkin'</h3>
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <p class="item-name">Magic Box - Roti & Donat</p>
+                            <div class="price-stock-row">
+                                <span class="discount-price">Rp 35.000</span>
+                                <span class="stock-info">Tinggal 2 Box!</span>
+                            </div>
+                            <span class="original-price">Rp 105.000</span>
+                        </div>
+                    </article>
+
+                    <article class="offer-card" data-category="vegan" data-store="SaladStop!" data-item="Magic Box - Salad & Wraps" data-price="25000" data-original-price="75000" data-rating="4.8" data-img="https://placehold.co/600x400/27ae60/FFFFFF?text=Salad">
+                        <div class="card-image">
+                            <img src="assets/images/saladstop.jpg" alt="Salad">
+                            <div class="store-info-overlay">
+                                <h3>SaladStop!</h3>
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.8</div>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <p class="item-name">Magic Box - Salad & Wraps</p>
+                            <div class="price-stock-row">
+                                <span class="discount-price">Rp 25.000</span>
+                                <span class="stock-info">Tinggal 5 Box!</span>
+                            </div>
+                            <span class="original-price">Rp 75.000</span>
+                        </div>
+                    </article>
+                    
+                    <article class="offer-card" data-category="kopi" data-store="Starbucks" data-item="Magic Box - Pastry & Kopi" data-price="40000" data-original-price="120000" data-rating="4.9" data-img="https://placehold.co/600x400/a67b5b/FFFFFF?text=Coffee">
+                        <div class="card-image">
+                            <img src="assets/images/starbucks.jpg" alt="Kopi">
+                            <div class="store-info-overlay">
+                                <h3>Starbucks</h3>
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <p class="item-name">Magic Box - Pastry & Kopi</p>
+                            <div class="price-stock-row">
+                                <span class="discount-price">Rp 40.000</span>
+                                <span class="stock-info">Cepat Habis!</span>
+                            </div>
+                            <span class="original-price">Rp 120.000</span>
+                        </div>
+                    </article>
+
+                    <article class="offer-card" data-category="kue" data-store="Paris Baguette" data-item="Magic Box - Roti & Kue" data-price="50000" data-original-price="150000" data-rating="4.8" data-img="https://placehold.co/600x400/f39c12/FFFFFF?text=Croissant">
+                        <div class="card-image">
+                            <img src="assets/images/parisbaguette.webp" alt="Croissant">
+                            <div class="store-info-overlay">
+                                <h3>Paris Baguette</h3>
+                                <div class="rating"><i class="fa-solid fa-star"></i> 4.8</div>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <p class="item-name">Magic Box - Roti & Kue</p>
+                            <div class="price-stock-row">
+                                <span class="discount-price">Rp 50.000</span>
+                                <span class="stock-info">Tinggal 3 Box!</span>
+                            </div>
+                            <span class="original-price">Rp 150.000</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Beranda</span>
+            </a>
+            <a href="jelajah.html" class="nav-item">
+                <i class="fa-solid fa-compass"></i>
+                <span>Jelajah</span>
+            </a>
+            <a href="pesanan.html" class="nav-item">
+                <i class="fa-solid fa-receipt"></i>
+                <span>Pesanan</span>
+            </a>
+            <a href="profile.html" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profil</span>
+            </a>
+        </nav>
+    </div>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
